@@ -8,6 +8,7 @@
   --team-members-backgroud: #f5f4fa;
   --border-header: #eeeeee;
   --background-dark-transparent: #2f303a66;
+  --logo-our-clients: #afb1b8;
 }
 
 ul {
@@ -64,6 +65,7 @@ body {
 .header-space-needed {
   display: flex;
   gap: 50px;
+  line-height: normal;
 }
 
 .order {
@@ -174,6 +176,11 @@ body {
   border: 1px solid var(--border-header);
 }
 
+.our-clients-main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .portfolio-big-net figure:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -183,15 +190,35 @@ body {
   background-color: var(--team-members-backgroud);
 }
 
+.containter-icons {
+  background: var(--team-members-backgroud);
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+  margin-right: 30px;
+}
 .contact {
   font-weight: 500;
   font-size: 14px;
   color: var(--contact-grey);
   text-decoration: none;
+  fill: currentColor;
+}
+
+.order-contact use {
+  padding-right: 10px;
 }
 
 .contact:hover,
 .contact:focus {
+  color: var(--main-blue);
+  outline: none;
+}
+
+.header-space-needed div:hover {
   color: var(--main-blue);
   outline: none;
 }
@@ -222,6 +249,28 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.our-clients-main ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.our-clients-main ul li a{
+  cursor: pointer;
+}
+
+.our-clients-main :hover {
+  color: var(--main-blue);
+  outline: none;
+}
+
+.our-clients-outline {
+  border: 1px solid var(--logo-our-clients);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
 
 .main-team-members-layout li {
