@@ -68,6 +68,10 @@ body {
   line-height: normal;
 }
 
+.smartphone-icon {
+  vertical-align: middle;
+}
+
 .order {
   background-image: linear-gradient(
       var(--background-dark-transparent),
@@ -208,8 +212,8 @@ body {
   fill: currentColor;
 }
 
-.order-contact use {
-  padding-right: 10px;
+.order-contact svg {
+  margin-right: 10px;
 }
 
 .contact:hover,
@@ -255,22 +259,44 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
-.our-clients-main ul li a{
+.our-clients-main a {
   cursor: pointer;
+  color: var(--logo-our-clients);
 }
 
-.our-clients-main :hover {
+.our-clients-main div:hover {
   color: var(--main-blue);
-  outline: none;
 }
 
 .our-clients-outline {
-  border: 1px solid var(--logo-our-clients);
+  border: 1px solid;
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  padding-top:20px;
+  padding-bottom:20px;
+  fill: currentColor;
+}
+
+.media-links-icons {
+  fill: var(--logo-our-clients);
+  display:flex;
+  margin-bottom:30px;
+margin-top:16px;
+justify-content: center;
+
+}
+.media-links-icons svg{
+margin-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+
+.media-links-icons ul li{
+  border-radius:none;
+box-shadow: none;
 }
 
 .main-team-members-layout li {
