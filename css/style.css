@@ -180,11 +180,6 @@ body {
   border: 1px solid var(--border-header);
 }
 
-.our-clients-main {
-  display: flex;
-  justify-content: space-between;
-}
-
 .portfolio-big-net figure:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -255,12 +250,9 @@ body {
   justify-content: space-between;
 }
 
-.our-clients-main ul {
+.our-clients-main {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-.our-clients-main a {
   cursor: pointer;
   color: var(--logo-our-clients);
 }
@@ -274,29 +266,63 @@ body {
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   fill: currentColor;
 }
 
 .media-links-icons {
   fill: var(--logo-our-clients);
-  display:flex;
-  margin-bottom:30px;
-margin-top:16px;
-justify-content: center;
-
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  justify-content: center;
 }
-.media-links-icons svg{
-margin-right: 10px;
-padding-top: 10px;
-padding-bottom: 10px;
-
+.media-links-icons svg {
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.media-links-icons ul li{
-  border-radius:none;
-box-shadow: none;
+.join-us-icons {
+  display: flex;
+  gap: 170px;
+}
+
+.media-links-icons svg:hover {
+  background-color: var(--main-blue);
+  border-radius: 50%;
+  fill: var(--logo-white);
+}
+
+.media-links-icons ul li {
+  border-radius: none;
+  box-shadow: none;
+}
+.media-links-icons-footer {
+  fill: var(--logo-white);
+  cursor: pointer;
+}
+
+.media-links-icons-footer svg {
+  margin-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.media-links-icons-footer svg:hover {
+  background-color: var(--main-blue);
+}
+
+.join-us div ul {
+  display: flex;
+}
+
+.join-us h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .main-team-members-layout li {
@@ -356,7 +382,7 @@ box-shadow: none;
   font-style: normal;
 }
 
-.footer-wrapper .container ul :nth-child(1) {
+.footer-wrapper .container ul li div {
   margin-top: 20px;
 }
 
@@ -404,4 +430,7 @@ box-shadow: none;
   background-color: var(--main-blue);
   color: var(--logo-white);
   outline: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
