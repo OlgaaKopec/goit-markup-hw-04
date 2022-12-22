@@ -189,16 +189,6 @@ body {
   background-color: var(--team-members-backgroud);
 }
 
-.containter-icons {
-  background: var(--team-members-backgroud);
-  border-radius: 4px;
-  align-items: center;
-  margin-bottom: 55px;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  text-align: center;
-  margin-right: 30px;
-}
 .contact {
   font-weight: 500;
   font-size: 14px;
@@ -227,27 +217,68 @@ body {
   justify-content: center;
 }
 
-.td-headers li h3 {
+.td-headers li > h3 {
   font-weight: 700;
   font-size: 14px;
   padding-bottom: 10px;
 }
 
-.td-headers li p {
-  font-size: 14px;
+.containter-icons {
+  background: var(--team-members-backgroud);
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.td-headers li > p {
   line-height: 1.7;
   color: var(--contact-grey);
+  font-size: 14px;
 }
 
 .main-team-members-layout {
   background-color: var(--team-members-backgroud);
   text-align: center;
 }
-
-.main-team-members-layout ul {
+.main-team-members-layout > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.main-team-members-layout ul li {
+  background: var(--logo-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  font-size: 16px;
+}
+
+.media-links-icons > ul {
+  fill: var(--logo-our-clients);
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  justify-content: center;
+}
+.media-links-icons svg {
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.media-links-icons ul li {
+  box-shadow: none;
+}
+
+.media-links-icons svg:hover,
+.media-links-icons svg:focus {
+  background-color: var(--main-blue);
+  border-radius: 50%;
+  fill: var(--logo-white);
 }
 
 .our-clients-main {
@@ -257,7 +288,8 @@ body {
   color: var(--logo-our-clients);
 }
 
-.our-clients-main div:hover {
+.our-clients-main a :hover,
+.our-clients-main a :focus {
   color: var(--main-blue);
 }
 
@@ -271,37 +303,10 @@ body {
   fill: currentColor;
 }
 
-.media-links-icons {
-  fill: var(--logo-our-clients);
-  display: flex;
-  margin-bottom: 30px;
-  margin-top: 16px;
-  justify-content: center;
-}
-.media-links-icons svg {
-  margin-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.join-us-icons {
-  display: flex;
-  gap: 170px;
-}
-
-.media-links-icons svg:hover {
-  background-color: var(--main-blue);
-  border-radius: 50%;
-  fill: var(--logo-white);
-}
-
-.media-links-icons ul li {
-  border-radius: none;
-  box-shadow: none;
-}
-.media-links-icons-footer {
+.media-links-icons-footer > ul {
   fill: var(--logo-white);
   cursor: pointer;
+  display: flex;
 }
 
 .media-links-icons-footer svg {
@@ -312,25 +317,19 @@ body {
   border-radius: 50%;
 }
 
-.media-links-icons-footer svg:hover {
+.media-links-icons-footer svg:hover,
+.media-links-icons-footer svg:focus {
   background-color: var(--main-blue);
 }
 
-.join-us div ul {
+.join-us-icons {
   display: flex;
+  gap: 170px;
 }
 
 .join-us h3 {
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.main-team-members-layout li {
-  background: var(--logo-white);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  font-size: 16px;
 }
 
 .headers h2 {
