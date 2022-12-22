@@ -257,8 +257,7 @@ body {
   color: var(--logo-our-clients);
 }
 
-.our-clients-main div:hover,
-.our-clients-main div:focus {
+.our-clients-main div:hover {
   color: var(--main-blue);
 }
 
@@ -290,8 +289,7 @@ body {
   gap: 170px;
 }
 
-.media-links-icons svg:hover,
-.media-links-icons svg:focus {
+.media-links-icons svg:hover {
   background-color: var(--main-blue);
   border-radius: 50%;
   fill: var(--logo-white);
@@ -314,8 +312,7 @@ body {
   border-radius: 50%;
 }
 
-.media-links-icons-footer svg:hover,
-.media-links-icons-footer svg:focus {
+.media-links-icons-footer svg:hover {
   background-color: var(--main-blue);
 }
 
