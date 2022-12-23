@@ -15,6 +15,11 @@ ul {
   list-style: none;
 }
 
+svg,
+img {
+  vertical-align: middle;
+}
+
 h1,
 h2,
 h3,
@@ -66,10 +71,6 @@ body {
   display: flex;
   gap: 50px;
   line-height: normal;
-}
-
-.smartphone-icon {
-  vertical-align: middle;
 }
 
 .order {
@@ -262,19 +263,28 @@ body {
 .media-links-icons {
   fill: var(--logo-our-clients);
   display: flex;
-  justify-content: space-around;
-  margin: 30px 32px 30px 32px;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
 }
 
-.media-links-icons li > svg {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.media-links-icons > li {
+  padding: 12px;
+  border-radius: 50%;
 }
 
-.media-links-icons svg:hover,
+.media-links-icons > li:is(:hover, :focus) {
+  background-color: var(--main-blue);
+  outline: none;
+}
+
+.media-links-icons > li:is(:hover, :focus) > svg {
+  fill: var(--logo-white);
+}
+
+.media-links-icons li:hover,
 .media-links-icons li:focus {
   background-color: var(--main-blue);
-  border: 0.5pt;
   border-radius: 50%;
   fill: var(--logo-white);
   outline: none;
@@ -307,18 +317,16 @@ body {
   fill: var(--logo-white);
   cursor: pointer;
   display: flex;
+  gap: 10px;
 }
 
-.media-links-icons-footer li > svg {
-  margin-right: 10px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+.media-links-icons-footer > li {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  border: 0.5pt;
+  padding: 12px;
 }
 
-.media-links-icons-footer svg:hover,
+.media-links-icons-footer li:hover,
 .media-links-icons-footer li:focus {
   background-color: var(--main-blue);
   border-radius: 50%;
@@ -328,6 +336,10 @@ body {
 .join-us-icons {
   display: flex;
   gap: 170px;
+}
+
+.join-us {
+  padding-top: 12px;
 }
 
 .join-us h3 {
@@ -378,7 +390,7 @@ body {
   padding-bottom: 51px;
 }
 
-.footer-wrapper .container ul li {
+.footer-wrapper .container ul > li {
   margin-bottom: 9px;
   line-height: 1.7;
   font-style: normal;
