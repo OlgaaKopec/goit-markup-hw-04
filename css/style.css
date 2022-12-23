@@ -240,17 +240,18 @@ body {
   font-size: 14px;
 }
 
-.main-team-members-layout {
+.section .order-team {
   background-color: var(--team-members-backgroud);
-  text-align: center;
 }
-.main-team-members-layout > ul {
+
+.main-team-members-layout {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 
-.main-team-members-layout ul li {
+.main-team-members-layout > li {
   background: var(--logo-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -258,27 +259,25 @@ body {
   font-size: 16px;
 }
 
-.media-links-icons > ul {
+.media-links-icons {
   fill: var(--logo-our-clients);
   display: flex;
-  margin-bottom: 30px;
-  margin-top: 16px;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 30px 32px 30px 32px;
 }
-.media-links-icons svg {
-  margin-right: 10px;
+
+.media-links-icons li > svg {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.media-links-icons ul li {
-  box-shadow: none;
-}
 
 .media-links-icons svg:hover,
-.media-links-icons svg:focus {
+.media-links-icons li:focus {
   background-color: var(--main-blue);
+  border: 0.5pt;
   border-radius: 50%;
   fill: var(--logo-white);
+  outline: none;
 }
 
 .our-clients-main {
@@ -288,9 +287,10 @@ body {
   color: var(--logo-our-clients);
 }
 
-.our-clients-main a :hover,
-.our-clients-main a :focus {
+.our-clients-main > li:hover,
+.our-clients-main > li:focus {
   color: var(--main-blue);
+  outline: none;
 }
 
 .our-clients-outline {
@@ -303,23 +303,26 @@ body {
   fill: currentColor;
 }
 
-.media-links-icons-footer > ul {
+.media-links-icons-footer {
   fill: var(--logo-white);
   cursor: pointer;
   display: flex;
 }
 
-.media-links-icons-footer svg {
+.media-links-icons-footer li > svg {
   margin-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  border: 0.5pt;
 }
 
 .media-links-icons-footer svg:hover,
-.media-links-icons-footer svg:focus {
+.media-links-icons-footer li:focus {
   background-color: var(--main-blue);
+  border-radius: 50%;
+  outline: none;
 }
 
 .join-us-icons {
